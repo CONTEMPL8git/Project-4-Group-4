@@ -15,6 +15,8 @@ These are the contents of our repository:
 
 • README.md - Our readme file
 • .gitignore - Our gitignore file
+• ETL_code.ipynb
+• K-Means and Cluster Results Code ( Wanderson Oliveira).ipynb
 • logistic_regression_trial_1.ipynb<br>
 • logistic_regression_trial_2.ipynb<br>
 • logistic_regression_trial_3.ipynb<br>
