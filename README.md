@@ -10,7 +10,39 @@
 Our group did data cleaning / ETL on a heart disease dataset called ["Indicators of Heart Disease (2022 UPDATE)"](https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease) and then created an ERD / schema and used that to make an SQL database. We added a new column for PatientID and used that as the primary key. We then proceeded to use several different machine learning models to analyze the data, do predictions, and determine precision, recall, F1, and overall accuracy.
 
 
+# What this Repository Contains
+These are the contents of our repository:
 
+• README.md - Our readme file
+
+• .gitignore - Our gitignore file
+
+• Project files
+</blockquote> logistic_regression_trial_1.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/1c66df2a-cc1b-4ab5-bb8a-da3cd2510d9a)
+</blockquote> logistic_regression_trial_2.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/723d8c8f-ff12-4e55-b377-1a2bafa3c6a8)
+</blockquote> logistic_regression_trial_3.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/06d91d7f-d5a0-4bd6-96eb-e43e182952a5)
+</blockquote> logistic_regression_trial_4.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/f4f174d2-7b99-49ea-a8bd-9138a1242ef6)
+</blockquote> logistic_regression_trial_5.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/f29f37fa-02a6-4530-88b2-0cdd8c42b54a)
+</blockquote> logistic_regression_trial_6.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/36ccbb3a-c7d4-4e79-9cb9-9727804d123f)
+</blockquote> neural_net.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/08a209ef-ac5a-4900-9aa4-fcfe83727ec7)
+</blockquote> random_forest.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/8c6ba33b-61fb-4633-8eba-52e5892091bb)
+</blockquote> unsupervised_learning.ipynb
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/a88e1b94-f78e-49ed-b928-306c28b0fe29)
+
+
+fetching_data.ipynb - Query statements we ran with psycopg2
+spotify_schedma.sql - Our SQL table schema
+Outputs - The cleaned tables from our ETL pipeline.
+Pictures - Screenshots of our ERD and completed database tables.
+Resources - The original dataset we used, as a csv file.
 
 
 
