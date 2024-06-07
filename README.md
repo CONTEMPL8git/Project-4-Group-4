@@ -194,9 +194,10 @@ Looking at the loss visualization we noticed that we were losing a quarter of ou
 We noticed that we were getting a lot of false negatives, if we had more time we would have done some research into oversampling. With the model where it is we decided it isn't an accurate predictor of whether a patient has heart disease or not.
 
 # Conclusion
+<br>
 
 # Presentation Slide Deck
-https://docs.google.com/presentation/d/1J-ZoR8RHVMXo8q67zg5adFVkl2ymBw1BecWAV1WkxE4/edit#slide=id.g2732414234d_0_5
+https://docs.google.com/presentation/d/1J-ZoR8RHVMXo8q67zg5adFVkl2ymBw1BecWAV1WkxE4/edit#slide=id.p
 <br>
 
 # References
