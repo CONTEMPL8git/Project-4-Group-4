@@ -6,7 +6,8 @@
 [Eric Zhou](https://github.com/zhou0366)<br>
 [Wanderson Oliveira](https://github.com/wwoliver7)<br>
 
-
+# Introduction
+Our group did data cleaning / ETL on a heart disease dataset called ["Indicators of Heart Disease (2022 UPDATE)"](Indicators of Heart Disease (2022 UPDATE)) and then created an ERD / schema and used that to make an SQL database. We added a new column for PatientID and used that as the primary key. 
 
 
 
