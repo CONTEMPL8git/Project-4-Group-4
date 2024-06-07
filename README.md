@@ -2,7 +2,7 @@
 
 # Contributors
 Blake Sandvick
-Christopher Loch
+[Christopher Loch](https://github.com/CONTEMPL8git)<br>
 Eric Zhou
 Wanderson Oliveira
 
