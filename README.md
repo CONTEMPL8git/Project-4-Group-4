@@ -29,6 +29,24 @@ These are the contents of our repository:
 • Resources - The original dataset we used, as a csv file.<br>
 
 
+# About The Data
+The dataset ...
+
+# Importing and Cleaning
+We downloaded the dataset csv file and used pandas on it in a jupyter notebook. This allowed us to easily view the data and see how it was structured. We also used pyjanitor, a library that allowed multiple data cleaning functions to be performed with fewer lines of code.
+Our data cleaning included:
+Dropping BMI...
+Converting categorical data to integers...
+We created a new csv titled Patient_Data...
+
+# Designing the ERD and Database Schema
+Our ERD only has one table because of how our dataset ....
+Patient id is the primary key because it touches all of the other columns and is a unique identifier. We created patient id for this reason, as it did not exist in the dataset. We had to redo the ERD several times because various of the columns had numbers that were actually floats even though they had looked as if they were integers. We ran a dtype in our notebook to figure out for sure what data type each column was and then made sure that we assigned them that in the ERD, and that took care of it. We probably should have done this in the first place.
+
+Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table are created and working properly.
+
+
+
 
 ## Supervised Learning: Logistical Regression
 Trial 1: lbfgs, no weight
