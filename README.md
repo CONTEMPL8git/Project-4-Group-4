@@ -87,3 +87,29 @@ When running the random forest, the skewing of the data towards patients without
 Age category, weight, state, chest scan, and general health are the most important features of the model. Note that these do not necessarily indicate high correlation or causation.
 
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/5c19d28f-1faf-4585-8988-aaee51a7104b)
+
+
+ # Plotting Elbow curve To find the optimal K value for the dataset:
+
+When determining K-Means value for Elbow curve many factors was taken into consideration in the dataset, however , number 3 was the optimal number for representing the model. Beyond number 3, Inertia still decreased, however not in a drastically way as observed when K-Means values is less than 3.
+
+
+![Elbow Curve](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/152826034/00ed9212-67e3-4e35-a959-90f1304da7a1)
+
+
+
+# K-Means cluster results :
+
+With this method, we could notice that clusters have more similarities and do have one of the parameters in common. Another observation in the results is that majority of red clusters(N1) are concentrated  on the right side of the graphic, which corrrelates to having heart attack, meaning that K-Means clustering algorithm is more inclined to reflecting true versus false results.
+
+
+
+![Clusters results](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/152826034/e63cc57b-da37-4a1e-9386-c82cebac2c31)
+
+
+
+
+
+
+
+
