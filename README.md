@@ -45,6 +45,7 @@ Patient id is the primary key because it touches all of the other columns and is
 
 <img width="566" alt="ERD creation screen in quick DBD" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/67d04f82-2446-4690-bc8c-becdf8208a93"><br>
 
+# Importing the Data into PostgreSQL
 Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table are created and working properly.<br>
 <img width="954" alt="Screenshot 2024-06-03 202212" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/e49efbf6-8580-4e26-8585-e50e2998cffb"><br>
 
