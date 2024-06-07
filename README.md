@@ -41,7 +41,9 @@ We created a new csv titled Patient_Data...
 
 # Designing the ERD and Database Schema
 Our ERD only has one table because of how our dataset ....
-Patient id is the primary key because it touches all of the other columns and is a unique identifier. We created patient id for this reason, as it did not exist in the dataset. We had to redo the ERD several times because various of the columns had numbers that were actually floats even though they had looked as if they were integers. We ran a dtype in our notebook to figure out for sure what data type each column was and then made sure that we assigned them that in the ERD, and that took care of it. We probably should have done this in the first place.
+Patient id is the primary key because it touches all of the other columns and is a unique identifier. We created patient id for this reason, as it did not exist in the dataset. We had to redo the ERD several times because various of the columns had numbers that were actually floats even though they had looked as if they were integers. We ran a dtype in our notebook to figure out for sure what data type each column was and then made sure that we assigned them that in the ERD, and that took care of it. We probably should have done this in the first place.<br>
+
+<img width="566" alt="ERD creation screen in quick DBD" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/67d04f82-2446-4690-bc8c-becdf8208a93"><br>
 
 Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table are created and working properly.
 
