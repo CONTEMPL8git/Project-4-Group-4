@@ -132,10 +132,10 @@ We noticed that we were getting a lot of false negatives, if we had more time we
 
 
 # References
-*Presentation slide image: Image provided by Microsoft Co-Pilot generative ai
-*Python Pandas replace multiple columns zero to Nan  https://stackoverflow.com/questions/45416684/python-pandas-replace-multiple-columns-zero-to-nan
+*Presentation slide image: Image provided by Microsoft Co-Pilot generative ai<br>
+*Python Pandas replace multiple columns zero to Nan  https://stackoverflow.com/questions/45416684/python-pandas-replace-multiple-columns-zero-to-nan<br>
 *We used Microsoft Co-Pilot to find this code: columns_to_replace = ['column1', 'column2', 'column3']
 replacement_dict = {True: 1, False: 0}
 for col in columns_to_replace:
-    df[col] = df[col].replace(replacement_dict)
+    df[col] = df[col].replace(replacement_dict)<br>
 
