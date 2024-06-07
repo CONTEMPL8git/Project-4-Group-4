@@ -115,6 +115,21 @@ With this method, we could notice that clusters have more similarities and do ha
 
 We created a Keras Sequential model, added the layers, and trained the model for predicting if someone has heart disease
 
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/blob/main/images/Neural-Network-Setup.png)
+
+After training the model we printed out the following visualizations
+
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/blob/main/images/Loss-graph.png)
+
+
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/blob/main/images/Accuracy-graph.png)
+
+Looking at the loss visualization we noticed that we were losing a quarter of our resources that we were training. That made us look closer at the data set when we noticed that our data is heavily skewed towards patients that don't have heart disease. We then decided to check a confusion matrix and class report.
+
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/blob/main/images/Neural-Network-confusion.png)
+
+We noticed that we were getting a lot of false negatives, if we had more time we would have done some research into oversampling. With the model where it is we decided it isn't an accurate predictor of whether a patient has heart disease or not.
+
 
 # References
 Presentation slide image: Image provided by Microsoft Co-Pilot generative ai
