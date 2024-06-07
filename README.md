@@ -1,5 +1,10 @@
 # Heart Disease Prediction Models [Project-4-Group-4]
 
+#Contributors
+Blake Sandvick
+Christopher Loch
+Eric Zhou
+Wanderson Oliveira
 
 
 
