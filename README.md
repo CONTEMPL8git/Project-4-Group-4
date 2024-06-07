@@ -73,6 +73,7 @@ Second, we looked at smoker status. There are four different groups within this:
 [Link to our Tableau Public page:<br>
 https://public.tableau.com/app/profile/christopher.loch/viz/Project4FINAL_17177226678500/Smokervs_Non-smoker?publish=yes]
 <br>
+<br>
 
 # Supervised Learning: Logistical Regression
 Trial 1: lbfgs, no weight
