@@ -62,7 +62,7 @@ Second, we looked at smoker status. There are four different groups within this:
 ![BMI-Viz-final](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/1769fd5d-75c0-431c-a6f7-3ebf6e1661ed)<br>
 
 
-## Supervised Learning: Logistical Regression
+# Supervised Learning: Logistical Regression
 Trial 1: lbfgs, no weight
 
 The initial trial of the logistic reaction uses lbfgs. The resulting model’s confusion matrix indicates that it generally classifies most patients as not having heart disease. While this means the model is correct with most patients who did not have heart disease, most patients who did have heart disease were incorrectly predicted as not having heart disease by the model.  
