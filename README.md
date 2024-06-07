@@ -17,8 +17,7 @@ These are the contents of our repository:
 
 • .gitignore - Our gitignore file
 
-• Project files
-</blockquote> logistic_regression_trial_1.ipynb<br>
+• logistic_regression_trial_1.ipynb<br>
 </blockquote> logistic_regression_trial_2.ipynb<br>
 </blockquote> logistic_regression_trial_3.ipynb<br>
 </blockquote> logistic_regression_trial_4.ipynb<br>
