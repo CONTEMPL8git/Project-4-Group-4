@@ -14,18 +14,16 @@ Our group did data cleaning / ETL on a heart disease dataset called ["Indicators
 These are the contents of our repository:
 
 • README.md - Our readme file
-
 • .gitignore - Our gitignore file
-
 • logistic_regression_trial_1.ipynb<br>
-</blockquote> logistic_regression_trial_2.ipynb<br>
-</blockquote> logistic_regression_trial_3.ipynb<br>
-</blockquote> logistic_regression_trial_4.ipynb<br>
-</blockquote> logistic_regression_trial_5.ipynb<br>
-</blockquote> logistic_regression_trial_6.ipynb<br>
-</blockquote> neural_net.ipynb<br>
-</blockquote> random_forest.ipynb<br>
-</blockquote> unsupervised_learning.ipynb<br>
+• logistic_regression_trial_2.ipynb<br>
+• logistic_regression_trial_3.ipynb<br>
+• logistic_regression_trial_4.ipynb<br>
+• logistic_regression_trial_5.ipynb<br>
+• logistic_regression_trial_6.ipynb<br>
+• neural_net.ipynb<br>
+• random_forest.ipynb<br>
+• unsupervised_learning.ipynb<br>
 • ERD / Schema file and screenshot<br>
 • SQL screenshots for table creation and SELECT * query<br>
 • Resources - The original dataset we used, as a csv file.<br>
