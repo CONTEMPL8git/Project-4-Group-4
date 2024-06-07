@@ -113,5 +113,8 @@ With this method, we could notice that clusters have more similarities and do ha
 
 # Neural Network
 
+We created a Keras Sequential model, added the layers, and trained the model for predicting if someone has heart disease
+
+
 
 
