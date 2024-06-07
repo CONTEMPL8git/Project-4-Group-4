@@ -11,12 +11,12 @@ Our group did data cleaning / ETL on a heart disease dataset called ["Indicators
 
 
 # What this Repository Contains
-These are the contents of our repository:
+These are the contents of our repository:<br>
 
-• README.md - Our readme file
-• .gitignore - Our gitignore file
-• ETL_code.ipynb
-• K-Means and Cluster Results Code ( Wanderson Oliveira).ipynb
+• README.md - Our readme file<br>
+• .gitignore - Our gitignore file<br>
+• ETL_code.ipynb<br>
+• K-Means and Cluster Results Code ( Wanderson Oliveira).ipynb<br>
 • logistic_regression_trial_1.ipynb<br>
 • logistic_regression_trial_2.ipynb<br>
 • logistic_regression_trial_3.ipynb<br>
@@ -28,10 +28,11 @@ These are the contents of our repository:
 • unsupervised_learning.ipynb<br>
 • ERD / Schema file and screenshot<br>
 • SQL screenshots for table creation and SELECT * query<br>
-• QuickDBD-export.sql
-• Heart_Disease_2022_Analysis.sql
-• Resources - The original dataset we used, as a csv file.<br>
-• Images and visualizations
+• QuickDBD-export.sql<br>
+• Heart_Disease_2022_Analysis.sql<br>
+• Resources - The original dataset we used, as a csv file<br>
+• New csv files after replaced non-numeric values and cleaned up<br>
+• Images and visualizations<br>
 
 
 # About The Data
