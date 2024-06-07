@@ -49,8 +49,9 @@ Once we had the proper ERD created, we created the table in Postgres and linked 
 We created some visualizations in Tableau to show how some of the demographics relate to having a heart attack or not. First, we looked at BMI vs. Had Heart Attack and it does show that a higher BMI does lead to higher liklihood of having a heart attack, but not by a huge amount. However the nature of our dataset which has a lot more people who did not have heart attacks has likely skewed that and made it show up as less correlated to having a heart attack than BMI actually is.
 Second, we looked at smoker status. There are four different groups within this: current smoker who now smokes every day, current smoker who smokes only some days, former smoker, and never smoked. As expected, even this dataset that has overrepresentation of people who have not had a heart attack still shows that the more people smoke are more likely to have had a heart attack, and even former smokers are more likely to have had a heart attack than people who have never smoked.
 
-![Smoker-Status-Viz-final](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/2e66d37b-feb2-4972-9f2f-329beb8083f4)
-![BMI-Viz-final](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/1769fd5d-75c0-431c-a6f7-3ebf6e1661ed)
+![Smoker-Status-Viz-final](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/2e66d37b-feb2-4972-9f2f-329beb8083f4)<br>
+
+![BMI-Viz-final](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/1769fd5d-75c0-431c-a6f7-3ebf6e1661ed)<br>
 
 
 ## Supervised Learning: Logistical Regression
