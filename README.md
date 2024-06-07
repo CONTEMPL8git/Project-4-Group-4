@@ -124,7 +124,7 @@ Retrieving coefficients of the model and plotting them for each column, we can s
  
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/ab4414ec-30bf-408d-aae3-225ddbfce349)
 
-## Supervised Learning: Random Forest
+# Supervised Learning: Random Forest
 
 When running the random forest, the skewing of the data towards patients without heart disease caused poor performance from the initial model once again. Like the logistical regression, the class weight and oversampler were applied to the data set to balance the training data to be more even. We can see that this model has the best performance overall across all metrics of precision and recall. 
 
