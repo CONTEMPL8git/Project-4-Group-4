@@ -70,6 +70,7 @@ Second, we looked at smoker status. There are four different groups within this:
 
 ![BMI-Viz-final](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/1769fd5d-75c0-431c-a6f7-3ebf6e1661ed)<br>
 <br>
+[Link to our Tableau Public page: https://public.tableau.com/app/profile/christopher.loch/viz/Project4FINAL_17177226678500/Smokervs_Non-smoker?publish=yes]
 <br>
 
 # Supervised Learning: Logistical Regression
