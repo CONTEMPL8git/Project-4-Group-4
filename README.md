@@ -45,7 +45,13 @@ Patient id is the primary key because it touches all of the other columns and is
 
 <img width="566" alt="ERD creation screen in quick DBD" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/67d04f82-2446-4690-bc8c-becdf8208a93"><br>
 
-Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table are created and working properly.
+Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table are created and working properly.<br>
+<img width="954" alt="Screenshot 2024-06-03 202212" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/e49efbf6-8580-4e26-8585-e50e2998cffb"><br>
+
+<img width="953" alt="Screenshot 2024-06-03 202325" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/2e940c17-9480-4831-afac-0326f3a5d865"><br>
+
+
+
 
 # Getting to Know Our Dataset via Some Initial Visualizations
 We created some visualizations in Tableau to show how some of the demographics relate to having a heart attack or not. First, we looked at BMI vs. Had Heart Attack and it does show that a higher BMI does lead to higher liklihood of having a heart attack, but not by a huge amount. However the nature of our dataset which has a lot more people who did not have heart attacks has likely skewed that and made it show up as less correlated to having a heart attack than BMI actually is.
