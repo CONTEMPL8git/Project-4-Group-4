@@ -9,6 +9,8 @@
 # Introduction
 Our group did data cleaning / ETL on a heart disease dataset called ["Indicators of Heart Disease (2022 UPDATE)"](https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease) and then created an ERD / schema and used that to make an SQL database. We added a new column for PatientID and used that as the primary key. We then proceeded to use several different machine learning models to analyze the data, do predictions, and determine precision, recall, F1, and overall accuracy.
 
+# Question:<br>
+Which type of machine learning can produce the highest accuracy prediction model for whether a patient will have heart disease?<br>
 
 # What this Repository Contains
 These are the contents of our repository:<br>
@@ -193,6 +195,7 @@ We noticed that we were getting a lot of false negatives, if we had more time we
 
 
 # References
+• https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease<br>
 • Presentation slide image: Image provided by Microsoft Co-Pilot generative ai<br>
 • Python Pandas replace multiple columns zero to Nan  https://stackoverflow.com/questions/45416684/python-pandas-replace-multiple-columns-zero-to-nan<br>
 • We used Microsoft Co-Pilot to find this code: columns_to_replace = ['column1', 'column2', 'column3']
