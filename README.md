@@ -45,7 +45,7 @@ Patient id is the primary key because it touches all of the other columns and is
 
 Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table are created and working properly.
 
-# Getting to know our dataset via some initial visualizations
+# Getting to Know Our Dataset via Some Initial Visualizations
 We created some visualizations in Tableau to show how some of the demographics relate to having a heart attack or not. First, we looked at BMI vs. Had Heart Attack and it does show that a higher BMI does lead to higher liklihood of having a heart attack, but not by a huge amount. However the nature of our dataset which has a lot more people who did not have heart attacks has likely skewed that and made it show up as less correlated to having a heart attack than BMI actually is.
 Second, we looked at smoker status. There are four different groups within this: current smoker who now smokes every day, current smoker who smokes only some days, former smoker, and never smoked. As expected, even this dataset that has overrepresentation of people who have not had a heart attack still shows that the more people smoke are more likely to have had a heart attack, and even former smokers are more likely to have had a heart attack than people who have never smoked.
 
