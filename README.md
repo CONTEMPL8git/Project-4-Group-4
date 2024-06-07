@@ -117,4 +117,5 @@ We created a Keras Sequential model, added the layers, and trained the model for
 
 
 # References
+Presentation slide image: Image provided by Microsoft Co-Pilot generative ai
 
