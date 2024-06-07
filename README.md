@@ -19,23 +19,23 @@ These are the contents of our repository:
 
 • Project files
 </blockquote> logistic_regression_trial_1.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/1c66df2a-cc1b-4ab5-bb8a-da3cd2510d9a)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/1c66df2a-cc1b-4ab5-bb8a-da3cd2510d9a)<br>
 </blockquote> logistic_regression_trial_2.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/723d8c8f-ff12-4e55-b377-1a2bafa3c6a8)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/723d8c8f-ff12-4e55-b377-1a2bafa3c6a8)<br>
 </blockquote> logistic_regression_trial_3.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/06d91d7f-d5a0-4bd6-96eb-e43e182952a5)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/06d91d7f-d5a0-4bd6-96eb-e43e182952a5)<br>
 </blockquote> logistic_regression_trial_4.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/f4f174d2-7b99-49ea-a8bd-9138a1242ef6)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/f4f174d2-7b99-49ea-a8bd-9138a1242ef6)<br>
 </blockquote> logistic_regression_trial_5.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/f29f37fa-02a6-4530-88b2-0cdd8c42b54a)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/f29f37fa-02a6-4530-88b2-0cdd8c42b54a)<br>
 </blockquote> logistic_regression_trial_6.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/36ccbb3a-c7d4-4e79-9cb9-9727804d123f)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/36ccbb3a-c7d4-4e79-9cb9-9727804d123f)<br>
 </blockquote> neural_net.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/08a209ef-ac5a-4900-9aa4-fcfe83727ec7)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/08a209ef-ac5a-4900-9aa4-fcfe83727ec7)<br>
 </blockquote> random_forest.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/8c6ba33b-61fb-4633-8eba-52e5892091bb)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/8c6ba33b-61fb-4633-8eba-52e5892091bb)<br>
 </blockquote> unsupervised_learning.ipynb
-![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/a88e1b94-f78e-49ed-b928-306c28b0fe29)
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/a88e1b94-f78e-49ed-b928-306c28b0fe29)<br>
 
 
 fetching_data.ipynb - Query statements we ran with psycopg2
