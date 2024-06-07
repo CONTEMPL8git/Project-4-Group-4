@@ -28,7 +28,10 @@ These are the contents of our repository:
 • unsupervised_learning.ipynb<br>
 • ERD / Schema file and screenshot<br>
 • SQL screenshots for table creation and SELECT * query<br>
+• QuickDBD-export.sql
+• Heart_Disease_2022_Analysis.sql
 • Resources - The original dataset we used, as a csv file.<br>
+• Images and visualizations
 
 
 # About The Data
