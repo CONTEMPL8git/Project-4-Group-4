@@ -195,6 +195,7 @@ We noticed that we were getting a lot of false negatives, if we had more time we
 
 # Conclusion
 
+<br>
 # References
 • https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease<br>
 • Presentation slide image: Image provided by Microsoft Co-Pilot generative ai<br>
