@@ -1,7 +1,7 @@
 # Heart Disease Prediction Models [Project-4-Group-4]
 
 # Contributors
-Blake Sandvick
+[Blake Sandvick](https://github.com/BlakeSandvick)<br>
 [Christopher Loch](https://github.com/CONTEMPL8git)<br>
 Eric Zhou
 Wanderson Oliveira
