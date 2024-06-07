@@ -27,13 +27,9 @@ These are the contents of our repository:
 </blockquote> neural_net.ipynb<br>
 </blockquote> random_forest.ipynb<br>
 </blockquote> unsupervised_learning.ipynb<br>
-
-
-fetching_data.ipynb - Query statements we ran with psycopg2
-spotify_schedma.sql - Our SQL table schema
-Outputs - The cleaned tables from our ETL pipeline.
-Pictures - Screenshots of our ERD and completed database tables.
-Resources - The original dataset we used, as a csv file.
+• ERD / Schema file and screenshot<br>
+• SQL screenshots for table creation and SELECT * query<br>
+• Resources - The original dataset we used, as a csv file.<br>
 
 
 
