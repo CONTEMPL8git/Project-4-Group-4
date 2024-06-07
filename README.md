@@ -3,8 +3,8 @@
 # Contributors
 [Blake Sandvick](https://github.com/BlakeSandvick)<br>
 [Christopher Loch](https://github.com/CONTEMPL8git)<br>
-Eric Zhou
-Wanderson Oliveira
+[Eric Zhou](https://github.com/zhou0366)<br>
+[Wanderson Oliveira](https://github.com/wwoliver7)<br>
 
 
 
