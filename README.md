@@ -38,7 +38,7 @@ These are the contents of our repository:<br>
 
 
 # About The Data
-The dataset ...
+The Kaggle dataset contains data from a 2022 CDC Behavioral Risk Factor Surveillance System (BRFSS) survey of health status of adults in the US. The data contains information covering health history, lifestyle, and demographic. Most data fields contain results of a yes/no or multiple choice response.
 
 # Importing and Cleaning
 We downloaded the dataset csv file and used pandas on it in a jupyter notebook. This allowed us to easily view the data and see how it was structured. We also used pyjanitor, a library that allowed multiple data cleaning functions to be performed with fewer lines of code.
