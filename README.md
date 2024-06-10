@@ -48,22 +48,23 @@ Converting categorical data to integers...
 We created a new csv titled Patient_Data...
 
 # Designing the ERD and Database Schema
-Our ERD only has one table because of how our dataset ....
-Patient id is the primary key because it touches all of the other columns and is a unique identifier. We created a patient id for this reason, as it did not exist in the dataset. We had to redo the ERD several times because various of the columns had numbers that were actually floats even though they had looked as if they were integers. We ran a dtype in our notebook to figure out for sure what data type each column was and then made sure that we assigned them that in the ERD, and that took care of it. We probably should have done this in the first place.<br>
+A main data table called PatientData was created to hold all the main data set. Additional tables were created to contain information on which integer IDs correspond to which values. This was done as many patient responses were transformed from string values to integer values. As a result, data retrieved simply from querying the patient data table will not necessarily be intelligible.
 
-<img width="566" alt="ERD creation screen in quick DBD" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/67d04f82-2446-4690-bc8c-becdf8208a93"><br>
+![patientdatatable](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/4ec4f451-a152-434a-a2f1-fdcd353c0ca0)
 
-# Importing the Data into PostgreSQL
-Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table were created and working properly.<br>
-<img width="954" alt="Screenshot 2024-06-03 202212" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/e49efbf6-8580-4e26-8585-e50e2998cffb"><br>
-<br>
-<img width="953" alt="Screenshot 2024-06-03 202325" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/2e940c17-9480-4831-afac-0326f3a5d865"><br>
-<br>
+The following ERD shows which columns of the PatientData table will need a connected table which can be used in a joined query to get the actual response string from the original data.
+
+![erd2](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/5571aec6-435e-4c5a-8b7d-9fc9c383cb47)
+
+The following example shows a joined query which both retrieves the integer vale from the PatientData table and its corresponding string value from one of the other tables
+
+![id vs value example](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/13ecbd85-f5b8-4613-8fd5-df6172423360)
+
 
 
 
 # Getting to Know Our Dataset via Some Initial Visualizations
-We created some visualizations in Tableau to show how some of the demographics relate to having a heart attack or not. First, we looked at BMI vs. Had Heart Attack and it does show that a higher BMI does lead to higher likelihood of having a heart attack, but not by a huge amount. However, the nature of our dataset which has a lot more people who did not have heart attacks has likely skewed that and made it show up as less correlated to having a heart attack than BMI actually is.
+We created some visualizations in Tableau to show how some of the demographics relate to having a heart attack or not. First, we looked at BMI vs. Had Heart Attack and it does show that a higher BMI does lead to a higher likelihood of having a heart attack, but not by a huge amount. However, the nature of our dataset which has a lot more people who did not have heart attacks has likely skewed that and made it show up as less correlated to having a heart attack than BMI actually is.
 Second, we looked at smoker status. There are four different groups within this: current smoker who now smokes every day, current smoker who smokes only some days, former smokers, and never smoked. As expected, even this dataset that has an overrepresentation of people who have not had a heart attack still shows that more people who smoke are more likely to have had a heart attack, and even former smokers are more likely to have had a heart attack than people who have never smoked.<br>
 <br>
 
