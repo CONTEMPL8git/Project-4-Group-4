@@ -33,12 +33,12 @@ These are the contents of our repository:<br>
 • QuickDBD-export.sql<br>
 • Heart_Disease_2022_Analysis.sql<br>
 • Resources - The original dataset we used, as a csv file<br>
-• New csv files after replaced non-numeric values and cleaned up<br>
+• New csv files after replacing non-numeric values and cleaning up<br>
 • Images and visualizations<br>
 
 
 # About The Data
-The Kaggle dataset contains data from a 2022 CDC Behavioral Risk Factor Surveillance System (BRFSS) survey of health status of adults in the US. The data contains information covering health history, lifestyle, and demographic. Most data fields contain results of a yes/no or multiple choice response.
+The Kaggle dataset contains data from a 2022 CDC Behavioral Risk Factor Surveillance System (BRFSS) survey of the health status of adults in the US. The data contains information covering health history, lifestyle, and demographics. Most data fields contain results of a yes/no or multiple choice response.
 
 # Importing and Cleaning
 We downloaded the dataset csv file and used pandas on it in a jupyter notebook. This allowed us to easily view the data and see how it was structured. We also used pyjanitor, a library that allowed multiple data cleaning functions to be performed with fewer lines of code.
@@ -49,12 +49,12 @@ We created a new csv titled Patient_Data...
 
 # Designing the ERD and Database Schema
 Our ERD only has one table because of how our dataset ....
-Patient id is the primary key because it touches all of the other columns and is a unique identifier. We created patient id for this reason, as it did not exist in the dataset. We had to redo the ERD several times because various of the columns had numbers that were actually floats even though they had looked as if they were integers. We ran a dtype in our notebook to figure out for sure what data type each column was and then made sure that we assigned them that in the ERD, and that took care of it. We probably should have done this in the first place.<br>
+Patient id is the primary key because it touches all of the other columns and is a unique identifier. We created a patient id for this reason, as it did not exist in the dataset. We had to redo the ERD several times because various of the columns had numbers that were actually floats even though they had looked as if they were integers. We ran a dtype in our notebook to figure out for sure what data type each column was and then made sure that we assigned them that in the ERD, and that took care of it. We probably should have done this in the first place.<br>
 
 <img width="566" alt="ERD creation screen in quick DBD" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/67d04f82-2446-4690-bc8c-becdf8208a93"><br>
 
 # Importing the Data into PostgreSQL
-Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table are created and working properly.<br>
+Once we had the proper ERD created, we created the table in Postgres and linked the csv file to it successfully and then we did SELECT * of it to demonstrate that the database and table were created and working properly.<br>
 <img width="954" alt="Screenshot 2024-06-03 202212" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/e49efbf6-8580-4e26-8585-e50e2998cffb"><br>
 <br>
 <img width="953" alt="Screenshot 2024-06-03 202325" src="https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/2e940c17-9480-4831-afac-0326f3a5d865"><br>
@@ -63,8 +63,8 @@ Once we had the proper ERD created, we created the table in Postgres and linked 
 
 
 # Getting to Know Our Dataset via Some Initial Visualizations
-We created some visualizations in Tableau to show how some of the demographics relate to having a heart attack or not. First, we looked at BMI vs. Had Heart Attack and it does show that a higher BMI does lead to higher liklihood of having a heart attack, but not by a huge amount. However the nature of our dataset which has a lot more people who did not have heart attacks has likely skewed that and made it show up as less correlated to having a heart attack than BMI actually is.
-Second, we looked at smoker status. There are four different groups within this: current smoker who now smokes every day, current smoker who smokes only some days, former smoker, and never smoked. As expected, even this dataset that has overrepresentation of people who have not had a heart attack still shows that the more people smoke are more likely to have had a heart attack, and even former smokers are more likely to have had a heart attack than people who have never smoked.<br>
+We created some visualizations in Tableau to show how some of the demographics relate to having a heart attack or not. First, we looked at BMI vs. Had Heart Attack and it does show that a higher BMI does lead to higher likelihood of having a heart attack, but not by a huge amount. However, the nature of our dataset which has a lot more people who did not have heart attacks has likely skewed that and made it show up as less correlated to having a heart attack than BMI actually is.
+Second, we looked at smoker status. There are four different groups within this: current smoker who now smokes every day, current smoker who smokes only some days, former smokers, and never smoked. As expected, even this dataset that has an overrepresentation of people who have not had a heart attack still shows that more people who smoke are more likely to have had a heart attack, and even former smokers are more likely to have had a heart attack than people who have never smoked.<br>
 <br>
 
 ![Smoker-Status-Viz-final](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/153468339/2e66d37b-feb2-4972-9f2f-329beb8083f4)<br>
@@ -89,7 +89,7 @@ The initial trial of the logistic reaction uses lbfgs. The resulting model’s c
 
 Trial 2: lbfgs, 1:10 weight
 
-Here, we can see that this class weight is overcompensating for the distribution of the test data. While the model is 100% accurate in predicting no heart disease, it was only able to predict one case of having heart disease. This results in a precision of 1.0 for having a heart attack but near 0 recall in having a heart attack which indicates a very high rate of false negatives.
+Here, we can see that this class weight is overcompensating for the distribution of the test data. While the model is 100% accurate in predicting no heart disease, it was only able to predict one case of a patient having heart disease. This results in a precision of 1.0 for having a heart attack but near 0 recall in having a heart attack which indicates a very high rate of false negatives.
 
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/42ec6447-3408-4947-b033-f2d8f34e2352)
 
@@ -116,7 +116,7 @@ When trying out other solvers such as newton cg resulted in roughly the same or 
  
 Trial 5: lbfgs, ‘balanced’ weight
 
-By setting class weight to ‘balanced’, the solver automatically adjusts the weight. Here, the results shown in confusion matrix and classification report are the best out of all the trial models.
+By setting the class weight to ‘balanced’, the solver automatically adjusts the weight. Here, the results shown in the confusion matrix and classification report are the best out of all the trial models.
 The resulting model displays 97% precision and 75% recall when predicting that patients have no heart disease. The recall is lower since many patients who did not have heart disease were predicted by the model to have heart disease. While not ideal, false positives are less damaging than false negatives in this scenario.
 The model also displays 22% precision and 77% recall for predicting that patients have heart disease. While the precision is significantly lower, this is acceptable as the training data is highly imbalanced towards patients with no heart disease. As a result, this logistical regression model allows some false positives for fewer patients receiving false negatives. Overall, most positive identifications by the model are incorrect (22%), but the rate at which the model gives a negative identification is much higher (97%).
 
@@ -135,13 +135,13 @@ https://www.geeksforgeeks.org/imbalanced-learn-module-in-python/
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/be950967-521d-437a-b976-c223ac264a1b)
 
  
-Retrieving coefficients of the model and plotting them for each column, we can show the level of importance for each feature. Chest scan, Sex, and having a stroke were the highest coefficients. Note that these do not necessarily indicate high correlation or causation.
+By retrieving the coefficients of the model and plotting them for each column, we can show the level of importance for each feature. Chest scan, Sex, and having a stroke were the highest coefficients. Note that these do not necessarily indicate high correlation or causation.
  
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/ab4414ec-30bf-408d-aae3-225ddbfce349)
 
 # Supervised Learning: Random Forest
 
-When running the random forest, the skewing of the data towards patients without heart disease caused poor performance from the initial model once again. Like the logistical regression, the class weight and oversampler were applied to the data set to balance the training data to be more even. We can see that this model has the best performance overall across all metrics of precision and recall. 
+When running the random forest, the skewing of the data towards patients without heart disease caused poor performance from the initial model again. Like the logistical regression, the class weight and oversampler were applied to the data set to balance the training data to be more even. We can see that this model has the best performance overall across all metrics of precision and recall. 
 
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/b53cc200-6c9b-458c-b8e2-bed526c64d5a)
 
@@ -154,7 +154,7 @@ Age category, weight, state, chest scan, and general health are the most importa
 
  # Plotting Elbow curve To find the optimal K value for the dataset:
 
-When determining K-Means value for Elbow curve many factors was taken into consideration in the dataset, however , number 3 was the optimal number for representing the model. Beyond number 3, Inertia still decreased, however not in a drastically way as observed when K-Means values is less than 3.
+When determining K-Means value for Elbow curve many factors were taken into consideration in the dataset, however, number 3 was the optimal number for representing the model. Beyond number 3, Inertia still decreased, however not in a drastic way as observed when K-Means values are less than 3.
 
 
 ![Elbow Curve](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/152826034/00ed9212-67e3-4e35-a959-90f1304da7a1)
@@ -163,7 +163,7 @@ When determining K-Means value for Elbow curve many factors was taken into consi
 
 # K-Means cluster results :
 
-With this method, we could notice that clusters have more similarities and do have one of the parameters in common. Another observation in the results is that majority of red clusters(N1) are concentrated  on the right side of the graphic, which corrrelates to having heart attack, meaning that K-Means clustering algorithm is more inclined to reflecting true versus false results.
+With this method, we could notice that clusters have more similarities and do have one of the parameters in common. Another observation in the results is that the majority of red clusters(N1) are concentrated  on the right side of the graphic, which corresponds to having a heart attack, meaning that the K-Means clustering algorithm is more inclined to reflect true versus false results.
 
 
 
@@ -176,7 +176,7 @@ With this method, we could notice that clusters have more similarities and do ha
 
 # Neural Network
 
-We created a Keras Sequential model, added the layers, and trained the model for predicting if someone has heart disease
+We created a Keras Sequential model, added the layers, and trained the model to predict if someone has heart disease
 
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/blob/main/images/Neural-Network-Setup.png)
 
@@ -187,14 +187,14 @@ After training the model we printed out the following visualizations
 
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/blob/main/images/Accuracy-graph.png)
 
-Looking at the loss visualization we noticed that we were losing a quarter of our resources that we were training. That made us look closer at the data set when we noticed that our data is heavily skewed towards patients that don't have heart disease. We then decided to check a confusion matrix and class report.
+Looking at the loss visualization we noticed that we were losing a quarter of the resources that we were training. That made us look closer at the data set when we noticed that our data is heavily skewed towards patients who don't have heart disease. We then decided to check a confusion matrix and class report.
 
 ![image](https://github.com/CONTEMPL8git/Project-4-Group-4/blob/main/images/Neural-Network-confusion.png)
 
-We noticed that we were getting a lot of false negatives, if we had more time we would have done some research into oversampling. With the model where it is we decided it isn't an accurate predictor of whether a patient has heart disease or not.
+We noticed that we were getting a lot of false negatives, if we had more time we would have done some research into oversampling. With the model where it is, we decided it isn't an accurate predictor of whether a patient has heart disease or not.
 
 # Conclusion
-<br>
+Because the dataset was heavily skewed towards patients without a reported heart disease, machine-learning models tended to see very low recall for making accurate predictions for patients who did report heart disease. When creating supervised learning models, oversampling the test data of patients who did have heart disease appeared to generate a better model across all metrics. The random forest model that was generated had the highest performance metrics.
 
 # Presentation Slide Deck
 https://docs.google.com/presentation/d/1J-ZoR8RHVMXo8q67zg5adFVkl2ymBw1BecWAV1WkxE4/edit#slide=id.p
