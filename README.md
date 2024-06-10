@@ -70,7 +70,7 @@ The following example shows a joined query which both retrieves the integer vale
 
 ![id vs value example](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/13ecbd85-f5b8-4613-8fd5-df6172423360)
 
-
+SQL files containing the script to create the tables and the sample query above are saved in the "Sql" folder. Data imported is located in the "csv" folder.
 
 
 # Getting to Know Our Dataset via Some Initial Visualizations
