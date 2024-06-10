@@ -41,11 +41,21 @@ These are the contents of our repository:<br>
 The Kaggle dataset contains data from a 2022 CDC Behavioral Risk Factor Surveillance System (BRFSS) survey of the health status of adults in the US. The data contains information covering health history, lifestyle, and demographics. Most data fields contain results of a yes/no or multiple choice response.
 
 # Importing and Cleaning
-We downloaded the dataset csv file and used pandas on it in a jupyter notebook. This allowed us to easily view the data and see how it was structured. We also used pyjanitor, a library that allowed multiple data cleaning functions to be performed with fewer lines of code.
-Our data cleaning included:
-Dropping BMI...
-Converting categorical data to integers...
-We created a new csv titled Patient_Data...
+A jupyter notebook was created to clean the initial data file. Pyjanitor was also used which allowed multiple data cleaning functions to be performed with fewer lines of code.
+
+The following steps were performed in data cleaning:
+
+-BMI was dropped as its value is directly dependent on height and weight
+
+-Yes/no answers were replaced using the method illustrated below.
+
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/de176f71-f343-487b-8aff-7aff0c3e1370)
+
+-Non-numeric values were replaced using the method illustrated below. For each of these columns, each unique value was extracted and assigned an ID. Then the values were replaced with this ID.
+
+-The final dataframe as well as dataframes containing IDs and string values for replaced non-numeric data were exported to csv.
+
+![image](https://github.com/CONTEMPL8git/Project-4-Group-4/assets/22827830/0302a780-b43d-4650-8bd4-30b5ed77ce2c)
 
 # Designing the ERD and Database Schema
 A main data table called PatientData was created to hold all the main data set. Additional tables were created to contain information on which integer IDs correspond to which values. This was done as many patient responses were transformed from string values to integer values. As a result, data retrieved simply from querying the patient data table will not necessarily be intelligible.
