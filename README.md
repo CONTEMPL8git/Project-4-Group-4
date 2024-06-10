@@ -207,6 +207,9 @@ We noticed that we were getting a lot of false negatives, if we had more time we
 # Conclusion
 Because the dataset was heavily skewed towards patients without a reported heart disease, machine-learning models tended to see very low recall for making accurate predictions for patients who did report heart disease. When creating supervised learning models, oversampling the test data of patients who did have heart disease appeared to generate a better model across all metrics. The random forest model that was generated had the highest performance metrics.
 
+Further possible improvements would be to apply oversampling to other models tried in this project, try other types of models for machine learning, and examine additional data sets as the dataset in the Kaggle also contained data with slightly different columns.
+
+
 # Presentation Slide Deck
 https://docs.google.com/presentation/d/1J-ZoR8RHVMXo8q67zg5adFVkl2ymBw1BecWAV1WkxE4/edit#slide=id.p
 <br>
